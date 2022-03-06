@@ -1,0 +1,54 @@
+<!doctype html>
+<!--Authors: Dr. Morrison and Pranav-->
+
+<html lang="en">
+<head>
+<title>index</title>
+<meta charset="utf-8"/>
+<link rel="stylesheet" href="index.css"/>
+<script src="Point.js"> </script>
+<script src="Curve.js"> </script>
+<script src="index.js"> </script>
+</head>
+<body>
+<h1> Canvas </h1>
+
+
+<canvas id="surface" height="500" width="800">
+    Error Loading
+</canvas>
+
+<div class="grid-container">
+<div class="grid-item">
+    Size:
+    <input type="range" min = "1" max="100" value="1" id="sizeSlider"></input>
+    <span id="sizeShow">1</span>
+</div>
+<div class="grid-item">
+    Color:
+    <input type="color" id="colorChooser"></input>
+    Color Transparency:
+    <input type="range" min = "0" max="100" value="50" id="colorTransparency"></input>
+    <span id="transparencyShow">0.5</span>
+    Background Color:
+    <input type="color" id="backgroundColorChooser"></input>
+</div>
+<div class="grid-item">
+    <button id="redoButton"> Redo Curve </button>
+    <button id="undoButton"> Undo Curve </button>
+    <button id="resetCanvasButton"> Reset Canvas </button>
+</div>
+<div class="grid-item">
+    Save Layer with Name 
+    <input id="layerNameInput"></input>
+    <button id="saveLayerButton"> Save </button>
+</div>
+<div class="grid-item"> 
+    Load Layer with Name
+    <input id="layerInput"></input>
+    <button id="loadLayerButton"> Load </button>
+    <span id="layersDisplay"></span>
+</div>
+</div>
+</body>
+</html>
